@@ -54,6 +54,13 @@ public class Highlight : MonoBehaviour {
         {
             instantiateHighlight();
         }
+		
+		if (timer >= 3.0f) 
+		{
+			//call alex function to move to obj HERE
+			
+			timer = 0.0f;
+		}
         
 
 	}
