@@ -54,6 +54,10 @@ public class Highlight : MonoBehaviour {
         {
             instantiateHighlight();
         }
+		if (!highlightStatus && GameObject.Find("highlightObj(Clone)")) 
+		{
+			//destroyObj();
+		}
 		
 		if (timer >= 3.0f) 
 		{
