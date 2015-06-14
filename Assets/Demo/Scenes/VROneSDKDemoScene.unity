@@ -1033,10 +1033,10 @@ MonoBehaviour:
       condition:
         component: {fileID: 0}
         info: []
-      name: 726563656e746572
+      name: recenter
       tooltip:
-      - 43656e746572
-      - 56696577
+      - Center
+      - View
       useSecondState: 0
       secondState:
         mat: {fileID: 0}
@@ -1138,10 +1138,10 @@ MonoBehaviour:
       condition:
         component: {fileID: 1044673243}
         info: []
-      name: 6c61756e63686572
+      name: launcher
       tooltip:
-      - 4d65646961
-      - 4c61756e63686572
+      - Media
+      - Launcher
       useSecondState: 0
       secondState:
         mat: {fileID: 0}
