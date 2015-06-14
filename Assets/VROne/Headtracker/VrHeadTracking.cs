@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using JetBrains.Annotations;
 
 namespace VROne
 {
@@ -7,9 +8,11 @@ namespace VROne
 
 		public bool resetViewOnTouch = false;
 		public static VrHeadTracking instance;
-
+	    public CameraDolly dolly;
 		// Use this for initialization
-		void Start () {
+		void Start ()
+		{
+		    dolly = GameObject.Find("VROneSDK").GetComponent<CameraDolly>();
 			instance = this;
 
 			//Set the initial rotation to align the virtual world with the real world on start
@@ -48,6 +51,7 @@ namespace VROne
 	#if UNITY_ANDROID && !UNITY_EDITOR
 			Quaternion rot = HeadTrackingAndroid.GetQuaternionUpdate();
 			transform.rotation = Quaternion.Inverse(initialRotation) * rot; //works for landscape left
+            dolly.headOrientation = transform.rotation;
 			if (recenter || resetViewOnTouch && (Input.touchCount > 0))
 			{
 				initialRotation = rot;
