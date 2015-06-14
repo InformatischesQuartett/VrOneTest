@@ -30,7 +30,7 @@ public class CameraDolly : MonoBehaviour {
 
     // Use this for initialization
 	void Start () {
-		Target = GameObject.Find("/Cube1").transform;
+        Target = GameObject.Find("/BieneContainer").transform;
 	    distance = Target.GetComponent<ObjectData>().OrbitDistance;
         cam = transform.FindChild("VROneSDKHead");
 		dolly = this.transform;

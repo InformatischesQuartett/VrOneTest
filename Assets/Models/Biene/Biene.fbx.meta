@@ -1,0 +1,163 @@
+fileFormatVersion: 2
+guid: 2e787d5f30c29aa48bad56a286a152ac
+timeCreated: 1434286447
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Auge
+    100002: Bein_hinten
+    100004: Bein_hinten_2
+    100006: Bein_mitte
+    100008: Bein_mitte_2
+    100010: Bein_vorne
+    100012: Bein_vorne_2
+    100014: //RootNode
+    100016: Bommel
+    100018: CINEMA_4D_Editor
+    100020: Ende
+    100022: Ende_2
+    100024: "Fl\xFCgel"
+    100026: "Fl\xFCgel_2"
+    100028: "F\xFChler"
+    100030: "F\xFChler_2"
+    100032: Kopf
+    100034: Mitte
+    100036: Null
+    100038: Null_2
+    100040: Null_3
+    100042: Pyramide
+    100044: Pyramide_2
+    100046: Symmetrie
+    100048: Symmetrie_1
+    100050: Symmetrie_2
+    100052: Symmetrie_2_2
+    100054: Symmetrie_3
+    100056: Symmetrie_4
+    400000: Auge
+    400002: Bein_hinten
+    400004: Bein_hinten_2
+    400006: Bein_mitte
+    400008: Bein_mitte_2
+    400010: Bein_vorne
+    400012: Bein_vorne_2
+    400014: //RootNode
+    400016: Bommel
+    400018: CINEMA_4D_Editor
+    400020: Ende
+    400022: Ende_2
+    400024: "Fl\xFCgel"
+    400026: "Fl\xFCgel_2"
+    400028: "F\xFChler"
+    400030: "F\xFChler_2"
+    400032: Kopf
+    400034: Mitte
+    400036: Null
+    400038: Null_2
+    400040: Null_3
+    400042: Pyramide
+    400044: Pyramide_2
+    400046: Symmetrie
+    400048: Symmetrie_1
+    400050: Symmetrie_2
+    400052: Symmetrie_2_2
+    400054: Symmetrie_3
+    400056: Symmetrie_4
+    2300000: Auge
+    2300002: Bein_hinten_2
+    2300004: Bein_mitte_2
+    2300006: Bein_vorne_2
+    2300008: Bommel
+    2300010: Ende_2
+    2300012: "Fl\xFCgel_2"
+    2300014: "F\xFChler_2"
+    2300016: Kopf
+    2300018: Mitte
+    2300020: Pyramide_2
+    3300000: Auge
+    3300002: Bein_hinten_2
+    3300004: Bein_mitte_2
+    3300006: Bein_vorne_2
+    3300008: Bommel
+    3300010: Ende_2
+    3300012: "Fl\xFCgel_2"
+    3300014: "F\xFChler_2"
+    3300016: Kopf
+    3300018: Mitte
+    3300020: Pyramide_2
+    4300000: Pyramide_2
+    4300002: Bein_vorne_2
+    4300004: Bein_mitte_2
+    4300006: Bein_hinten_2
+    4300008: Bommel
+    4300010: "F\xFChler_2"
+    4300012: "Fl\xFCgel_2"
+    4300014: Auge
+    4300016: Kopf
+    4300018: Mitte
+    4300020: Ende_2
+    7400000: C4D Animation Take
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

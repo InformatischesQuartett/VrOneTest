@@ -33,7 +33,7 @@ public class Travel : MonoBehaviour
 	    }
         else if (Input.GetKeyDown(KeyCode.C))
         {
-            StartTravel(GameObject.Find("/Cube1"));
+            StartTravel(GameObject.Find("/BieneContainer"));
         }
 	}
 
