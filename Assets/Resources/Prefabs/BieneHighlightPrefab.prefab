@@ -12,7 +12,7 @@ GameObject:
   - 23: {fileID: 2396806}
   - 95: {fileID: 9523266}
   m_Layer: 0
-  m_Name: highlightObj
+  m_Name: BieneHighlightPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
