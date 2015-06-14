@@ -407,8 +407,6 @@ MonoBehaviour:
                 isBackButton: 0
                 isCloseButton: 0
                 zOffset: 0
-                callback: {}
-                condition: {}
                 name: 
                 tooltip: []
                 useSecondState: 0
@@ -514,8 +512,6 @@ MonoBehaviour:
                 isBackButton: 0
                 isCloseButton: 0
                 zOffset: 0
-                callback: {}
-                condition: {}
                 name: 
                 tooltip: []
                 useSecondState: 0

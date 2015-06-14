@@ -951,6 +951,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!1 &1429481163
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,8 +1104,6 @@ MonoBehaviour:
                 isBackButton: 0
                 isCloseButton: 0
                 zOffset: 0
-                callback: {}
-                condition: {}
                 name: 
                 tooltip: []
                 useSecondState: 0
@@ -1210,8 +1209,6 @@ MonoBehaviour:
                 isBackButton: 0
                 isCloseButton: 0
                 zOffset: 0
-                callback: {}
-                condition: {}
                 name: 
                 tooltip: []
                 useSecondState: 0
@@ -1388,6 +1385,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!1 &1873092623
 GameObject:
   m_ObjectHideFlags: 0
