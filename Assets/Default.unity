@@ -87,6 +87,21 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &243892578 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100036, guid: 2e787d5f30c29aa48bad56a286a152ac, type: 3}
+  m_PrefabInternal: {fileID: 472971571}
+--- !u!114 &243892580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 243892578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3457590300d5d445b3274ea951a0740, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &285685853
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,7 +156,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 2e787d5f30c29aa48bad56a286a152ac, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.50999999
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 2e787d5f30c29aa48bad56a286a152ac, type: 3}
       propertyPath: m_LocalPosition.z

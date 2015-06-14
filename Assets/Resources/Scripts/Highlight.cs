@@ -20,13 +20,13 @@ public class Highlight : MonoBehaviour {
     private Renderer rend;
     private Renderer highlightObjRend;
 
-    private bool highlightStatus = false;
+    private bool highlightStatus = true;
 
     private int colorIterator = 0;
     
     //Timer
     private float timer = 0.0f;
-    private float maxHighlightSize = 1.5f;
+    private float maxHighlightSize = 1.0f;
 	
     // Use this for initialization
 	void Start () {
@@ -35,13 +35,13 @@ public class Highlight : MonoBehaviour {
         setColors();
         
         
-        //get renderer for changing color
-        rend = GetComponent<Renderer>();
-        rend.material.renderQueue = 4000;
+        //get renderer for setting render queue
+        //rend = GetComponent<Renderer>();
+        //rend.material.renderQueue = 4000;
 
         //find prefab
-        highlightObj = (Transform)Resources.Load("prefabs/TestCubePrefab", typeof(Transform));
-
+        highlightObj = (Transform)Resources.Load("Prefabs/BieneHighlightPrefab", typeof(Transform));
+        highlightObj.name = "highlightObj";
  
         
 	}
@@ -93,7 +93,11 @@ public class Highlight : MonoBehaviour {
        /*Create Highlight Object if none is there*/
        if (!highlightObjInScene)
        {
-           Instantiate(highlightObj, this.transform.position, this.transform.rotation);
+           var myHighlightObj = (Transform) Instantiate(highlightObj, this.transform.position, this.transform.rotation);// as GameObject;
+           myHighlightObj.transform.parent = this.transform;
+           myHighlightObj.localRotation = Quaternion.identity;
+          
+
        }
 
        /*Change Size and Color*/
