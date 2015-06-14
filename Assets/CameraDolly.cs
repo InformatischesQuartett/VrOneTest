@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CameraDolly : MonoBehaviour {
 	
-	public float distance = 4;
+	private float distance = 5;
 	public float mouseSense = 2.5f;
 	public float mouseScrollSense = 1.0f;
 
@@ -12,17 +12,26 @@ public class CameraDolly : MonoBehaviour {
 	
 	private Transform cam;
 	private Transform dolly;
-	private Transform target;
-	
-	private float hRot;
+    public Transform Target { get; set; }
+
+    private float hRot;
 	private float vRot;
     private float vRotMax = 60;
     private float vRotMin = -20;
     private float zRot;
 
-	// Use this for initialization
+    private bool _dollying = true;
+
+    public bool Dollying
+    {
+        get { return _dollying; }
+        set { _dollying = value; }
+    }
+
+    // Use this for initialization
 	void Start () {
-		target = GameObject.Find("/Cube").transform;
+		Target = GameObject.Find("/Cube1").transform;
+	    distance = Target.GetComponent<ObjectData>().OrbitDistance;
         cam = transform.FindChild("VROneSDKHead");
 		dolly = this.transform;
 	}
@@ -30,7 +39,6 @@ public class CameraDolly : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		// Do raycast on click and get the new character
-		
 		if (Input.GetMouseButtonDown(0))
 		{
 			RaycastHit hitInfo = new RaycastHit();
@@ -40,32 +48,35 @@ public class CameraDolly : MonoBehaviour {
 				Debug.Log("Hit " + hitInfo.transform.gameObject.name);
 				if (hitInfo.transform.gameObject.tag == "Player")
 				{
-					target = hitInfo.transform;
+					Target = hitInfo.transform;
 				}
 			}
-		} 
-
-        // Do camera stuff		
-		dolly.position = target.position;
-	    dolly.rotation = target.rotation;
-		
-		if (Input.GetMouseButton(1))
-		{
-		    hRot += Input.GetAxis("Mouse X")*mouseSense;
-		    vRot -= Input.GetAxis("Mouse Y")*mouseSense;
 		}
 
-	    zRot -= Input.GetAxis("Horizontal");
+	    if (_dollying)
+	    {
+	        // Do camera stuff		
+	        dolly.position = Target.position;
+	        dolly.rotation = Target.rotation;
 
-		vRot = Mathf.Clamp(vRot, vRotMin, vRotMax);
+	        if (Input.GetMouseButton(1))
+	        {
+	            hRot += Input.GetAxis("Mouse X")*mouseSense;
+	            vRot -= Input.GetAxis("Mouse Y")*mouseSense;
+	        }
 
-	    distance -= Input.GetAxis("Mouse ScrollWheel")*mouseScrollSense;
-		distance = Mathf.Clamp(distance, distMin, distMax);
+	        zRot -= Input.GetAxis("Horizontal");
 
-	    dolly.rotation = Quaternion.Euler(vRot, hRot, zRot);
+	        vRot = Mathf.Clamp(vRot, vRotMin, vRotMax);
 
-	    hRot += dolly.rotation.z;
+	        distance -= Input.GetAxis("Mouse ScrollWheel")*mouseScrollSense;
+	        distance = Mathf.Clamp(distance, distMin, distMax);
 
-	    cam.localPosition = new Vector3(0, 0, -distance);
+	        dolly.rotation = Quaternion.Euler(vRot, hRot, zRot);
+
+	        hRot += dolly.rotation.z;
+
+	        cam.localPosition = new Vector3(0, 0, -distance);
+	    }
 	}
 }
