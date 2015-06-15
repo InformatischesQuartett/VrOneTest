@@ -12,7 +12,7 @@ public class CameraDolly : MonoBehaviour {
 	
 	private Transform cam;
 	private Transform dolly;
-    public Transform Target { get; set; }
+    public Transform Target;
 
     private float hRot;
 	private float vRot;
@@ -51,8 +51,8 @@ public class CameraDolly : MonoBehaviour {
 	        hRot += cam.localRotation.z;
 
 	        Target.localRotation = Quaternion.Euler(0, hRot*10, 0);
-
-	        cam.position = new Vector3(0, 0, -distance);
+            distance = Target.GetComponent<ObjectData>().OrbitDistance;
+	        cam.localPosition = new Vector3(0, 0, -distance);
 	    }
 	}
 }
