@@ -1,0 +1,160 @@
+fileFormatVersion: 2
+guid: 5f2ba7aa66673f94a9c8659b7be9d6cb
+timeCreated: 1434285194
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: hals
+    100004: hand1
+    100006: hand2
+    100008: "h\xFCfte"
+    100010: "h\xFCfte2"
+    100012: Kugel
+    100014: Kugel_2
+    100016: Mond
+    100018: oberarm1
+    100020: oberarm2
+    100022: "oberk\xF6rper"
+    100024: "oberk\xF6rper_2"
+    100026: obersch
+    100028: Physikalischer_Himmel
+    100030: Pyramide
+    100032: Schattenebene
+    100034: Sky_Null
+    100036: Sonne
+    100038: unterarm1
+    100040: unterarm2
+    100042: "unterk\xF6rper"
+    100044: untersch
+    400000: //RootNode
+    400002: hals
+    400004: hand1
+    400006: hand2
+    400008: "h\xFCfte"
+    400010: "h\xFCfte2"
+    400012: Kugel
+    400014: Kugel_2
+    400016: Mond
+    400018: oberarm1
+    400020: oberarm2
+    400022: "oberk\xF6rper"
+    400024: "oberk\xF6rper_2"
+    400026: obersch
+    400028: Physikalischer_Himmel
+    400030: Pyramide
+    400032: Schattenebene
+    400034: Sky_Null
+    400036: Sonne
+    400038: unterarm1
+    400040: unterarm2
+    400042: "unterk\xF6rper"
+    400044: untersch
+    2300000: hals
+    2300002: hand1
+    2300004: hand2
+    2300006: "h\xFCfte"
+    2300008: "h\xFCfte2"
+    2300010: Kugel_2
+    2300012: oberarm1
+    2300014: oberarm2
+    2300016: "oberk\xF6rper_2"
+    2300018: obersch
+    2300020: Pyramide
+    2300022: unterarm1
+    2300024: unterarm2
+    2300026: untersch
+    3300000: hals
+    3300002: hand1
+    3300004: hand2
+    3300006: "h\xFCfte"
+    3300008: "h\xFCfte2"
+    3300010: Kugel_2
+    3300012: oberarm1
+    3300014: oberarm2
+    3300016: "oberk\xF6rper_2"
+    3300018: obersch
+    3300020: Pyramide
+    3300022: unterarm1
+    3300024: unterarm2
+    3300026: untersch
+    4300000: Pyramide
+    4300002: hals
+    4300004: Kugel_2
+    4300006: "oberk\xF6rper_2"
+    4300008: oberarm1
+    4300010: oberarm2
+    4300012: hand1
+    4300014: unterarm1
+    4300016: unterarm2
+    4300018: hand2
+    4300020: "h\xFCfte"
+    4300022: "h\xFCfte2"
+    4300024: obersch
+    4300026: untersch
+    7400000: C4D Animation Take
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
