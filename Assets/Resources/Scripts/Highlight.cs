@@ -2,17 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 
-/**
- * HOW IT WORKS:
- * - create a prefab of the object you want to highlight
- * - set the ShaderHighlightObj.shader as the prefab shaders material
- * - set the ShaderObj.shader as the object shaders material
- * - out this script on the object you want to highlight
- * - the highlighting starts when the bool highlightStatus is set to true
- **/
 public class Highlight : MonoBehaviour {
 
-    private Transform highlightObj;
+    public Transform highlightObj;
 
     private Color highlightColor;
     private Color highlightColor2;
@@ -26,7 +18,7 @@ public class Highlight : MonoBehaviour {
     
     //Timer
     private float timer = 0.0f;
-    private float maxHighlightSize = 1.0f;
+    private float maxHighlightSize = 1.05f;
 	
     // Use this for initialization
 	void Start () {
@@ -40,7 +32,7 @@ public class Highlight : MonoBehaviour {
         //rend.material.renderQueue = 4000;
 
         //find prefab
-        highlightObj = (Transform)Resources.Load("Prefabs/BieneHighlightPrefab", typeof(Transform));
+        //highlightObj = (Transform)Resources.Load("Prefabs/BieneHighlightPrefab", typeof(Transform));
         highlightObj.name = "highlightObj";
  
         

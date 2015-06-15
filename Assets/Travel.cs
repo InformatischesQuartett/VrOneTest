@@ -15,6 +15,7 @@ public class Travel : MonoBehaviour
 	void Update () {
 	    if (traveling && _next != null)
 	    {
+     
             if ((_next.GetComponent<ObjectData>().OrbitDistance * 1/12) > Vector3.Distance(this.gameObject.transform.position, _next.transform.position))
 	        {
 	            StopTravel();
